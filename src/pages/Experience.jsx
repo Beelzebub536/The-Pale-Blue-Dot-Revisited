@@ -109,8 +109,8 @@ const Experience = () => {
             <BeforeAfterSlider
               beforeImage="/qorikalis1978jpg.jpg"
               afterImage="/qorikalis2004.jpg"
-              beforeLabel="Pre-2020"
-              afterLabel="2020 Lockdown"
+              beforeLabel="1978"
+              afterLabel="2004"
             />
             <p className="text-gray-400 mt-4 text-center">
               Drag to see how our glaciers have retreated over the decades
@@ -118,10 +118,9 @@ const Experience = () => {
           </div>
 
           {/* Ozone Section */}
-          {/* Ozone Section */}
           <div className="mb-20 fade-in">
-            <h3 className="text-2xl font-bold text-gray-300 mb-6 text-center">
-              The Breath of
+            <h3 className="text-2xl font-bold text-gray-300 mb-6 text-start">
+              Ozone Hole
             </h3>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -130,11 +129,11 @@ const Experience = () => {
                 <div className="aspect-square w-full overflow-hidden rounded-lg shadow-lg">
                   <img
                     src="ozone_1979.jpg"
-                    alt="Glacier 1984"
+                    alt="ozone_1979"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="text-gray-400 mt-2">Glacier 1984</p>
+                <p className="text-gray-400 mt-2">ozone_1979</p>
               </div>
 
               {/* After Image */}
@@ -142,11 +141,11 @@ const Experience = () => {
                 <div className="aspect-square w-full overflow-hidden rounded-lg shadow-lg">
                   <img
                     src="ozone_2018_lrg.png"
-                    alt="Glacier 2024"
+                    alt="ozone_2018"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="text-gray-400 mt-2">Glacier 2024</p>
+                <p className="text-gray-400 mt-2">ozone_2018</p>
               </div>
             </div>
 
@@ -162,15 +161,10 @@ const Experience = () => {
             </h3>
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="Bengal delta.jpg"
                 alt="Bangladesh Delta Satellite View"
                 className="w-full h-96 object-cover"
               />
-              <div className="absolute top-4 right-4 bg-black/80 px-4 py-2 rounded-lg border border-blue-400">
-                <span className="text-blue-400 font-mono text-sm">
-                  Live View: October 3, 2025
-                </span>
-              </div>
               <div className="absolute bottom-4 left-4 bg-black/80 px-4 py-3 rounded-lg max-w-md">
                 <p className="text-gray-300 text-sm">
                   "This fragile, beautiful delta - home to millions, sustained
@@ -200,10 +194,19 @@ const Experience = () => {
       </ParallaxSection>
 
       {/* Final Message */}
-      <section className="min-h-screen flex items-center justify-center bg-black relative">
+      <section
+        className="min-h-screen flex items-center justify-center bg-black relative bg-cover bg-center"
+        style={{ backgroundImage: "url('/final.jpg')" }}
+      >
+        {/* Optional overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Glowing pulse dot */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="w-4 h-4 bg-blue-400 rounded-full animate-pulse shadow-2xl shadow-blue-400/50"></div>
         </div>
+
+        {/* Content */}
         <div className="relative z-10 text-center px-6 max-w-2xl mx-auto fade-in">
           <p className="text-2xl md:text-3xl text-gray-300 mb-8 leading-relaxed">
             "...is a mote of dust, suspended in a sunbeam."
@@ -211,6 +214,7 @@ const Experience = () => {
           <p className="text-lg text-gray-500 italic">
             - Adapted from Carl Sagan's "Pale Blue Dot"
           </p>
+
           <div className="mt-12">
             <a
               href="/data"

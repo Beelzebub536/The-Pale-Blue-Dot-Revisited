@@ -5,37 +5,27 @@ const Mission = () => {
     {
       name: "Sumon Das",
       image: "/image1.jpg",
-      role: "Developers & Storytellers",
-      description:
-        "Passionate about using technology to communicate scientific truths",
+      role: "Vissionary & Creative manager",
     },
     {
       name: "Abanti Dutta Athoy",
       image: "/image2.jpg",
-      role: "Developers & Storytellers",
-      description:
-        "Passionate about using technology to communicate scientific truths",
+      role: "Graphic Designer",
     },
     {
       name: "Labiba Faiza Karim",
       image: "/image3.jpg",
-      role: "Developers & Storytellers",
-      description:
-        "Passionate about using technology to communicate scientific truths",
+      role: "Fullstack Developer + Researcher",
     },
     {
       name: "Tahrina Siddika Sumaiya",
       image: "/image4.jpg",
-      role: "Developers & Storytellers",
-      description:
-        "Passionate about using technology to communicate scientific truths",
+      role: "Storyteller",
     },
     {
       name: "Md. Tahminnuzzaman Nahian",
       image: "/image5.jpg",
-      role: "Developers & Storytellers",
-      description:
-        "Passionate about using technology to communicate scientific truths",
+      role: "Fullstack Developer + Researcher",
     },
   ];
 
@@ -110,7 +100,6 @@ const Mission = () => {
                     {member.name}
                   </h3>
                   <p className="text-blue-400 mb-2">{member.role}</p>
-                  <p className="text-gray-300">{member.description}</p>
                 </div>
               </div>
             ))}

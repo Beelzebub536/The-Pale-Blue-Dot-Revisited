@@ -6,42 +6,42 @@ const Data = () => {
     {
       title: "Glacial Retreat",
       description: "Satellite imagery reveals the dramatic retreat of glaciers worldwide. The Columbia Glacier in Alaska has retreated over 20 kilometers since the 1980s, serving as a stark indicator of climate change.",
-      image: "https://images.unsplash.com/photo-1510566337591-4e3e18ed45c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/arctic_nsidc_2021_th.jpg",
       dataLink: "https://earthobservatory.nasa.gov/world-of-change",
       linkText: "See NASA World of Change"
     },
     {
       title: "Ozone Layer Recovery",
       description: "Thanks to the Montreal Protocol and satellite monitoring by Aura and Nimbus-7, the ozone hole is slowly healing. This represents one of humanity's greatest environmental success stories.",
-      image: "https://images.unsplash.com/photo-1614732414444-096e5f1122d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/ozon.jpg",
       dataLink: "https://ozonewatch.gsfc.nasa.gov/",
       linkText: "Visit NASA Ozone Watch"
     },
-    {
-      title: "The 2020 Pollution Pause",
+{
+      title: "Ozone Hole Monitoring",
       description: "During global lockdowns, NASA satellites recorded unprecedented drops in nitrogen dioxide levels. This natural experiment showed how quickly our atmosphere can recover when emissions decrease.",
-      image: "https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      dataLink: "https://earthobservatory.nasa.gov/images/146362/air-pollution-remains-low-as-people-stay-at-home",
-      linkText: "View NASA Earth Observatory Data"
-    },
+      image: "https://assets.science.nasa.gov/content/dam/science/esd/eo/woc/images/ozone/ozone_2018.jpg",
+      dataLink: "https://earthobservatory.nasa.gov/world-of-change/Ozone",
+      linkText: "View NASA Earth Observatory Data"
+    },
     {
       title: "Bangladesh Delta Monitoring",
       description: "The Ganges-Brahmaputra Delta is one of the world's most dynamic landscapes. Using Landsat and Sentinel data, we monitor changes in this vital ecosystem that supports over 100 million people.",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/delta.png",
       dataLink: "https://landsat.gsfc.nasa.gov/",
       linkText: "Explore Landsat Data"
     },
     {
       title: "Sea Level Rise",
       description: "NASA's GRACE and Jason satellite missions precisely measure sea level rise, revealing an average increase of 3.4 millimeters per year, with some regions experiencing much faster rates.",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/sea.png",
       dataLink:"https://sealevel.nasa.gov/",
       linkText: "Check NASA Sea Level Data"
     },
     {
       title: "Deforestation Patterns",
       description: "Decades of satellite observations show the rapid loss of forest cover in critical regions like the Amazon, Congo Basin, and Southeast Asia, highlighting the need for sustainable land management.",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: "/deforestation.jpg",
       dataLink: "https://earthobservatory.nasa.gov/features/Deforestation",
       linkText: "Study Deforestation Data"
     }
