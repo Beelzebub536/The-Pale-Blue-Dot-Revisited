@@ -65,41 +65,32 @@ const Experience = () => {
       </section>
 
       {/* Act I - The Awakening */}
-      <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-black to-blue-900/30">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <div className="text-center mb-16 fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-6">
-              Act I: The Awakening
-            </h2>
-            <p className="text-xl text-gray-300 leading-relaxed">
-              "I am but a collection of circuits and sensors, orbiting silently
-              in the cold vacuum. For decades, I have watched over this pale
-              blue dot. Today, I share what I've seen..."
-            </p>
-          </div>
+      <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
+        {/* 🔹 Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/bg.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="fade-in">
-              <img
-                src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Earth from space"
-                className="w-full h-64 object-cover rounded-lg shadow-2xl"
-              />
-              <p className="text-gray-400 mt-4 text-sm">
-                The silent observer - watching over our world
-              </p>
-            </div>
-            <div className="fade-in">
-              <img
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Satellite in orbit"
-                className="w-full h-64 object-cover rounded-lg shadow-2xl"
-              />
-              <p className="text-gray-400 mt-4 text-sm">
-                Our home, suspended in a sunbeam
-              </p>
-            </div>
-          </div>
+        {/* 🔹 Overlay (optional for better contrast) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-blue-900/40"></div>
+
+        {/* 🔹 Content */}
+        <div className="relative z-10 container mx-auto px-6 max-w-4xl text-center fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-400 mb-6">
+            Act I: The Awakening
+          </h2>
+          <p className="text-xl text-gray-300 leading-relaxed mb-12">
+            "I am but a collection of circuits and sensors, orbiting silently in
+            the cold vacuum. For decades, I have watched over this pale blue
+            dot. Today, I share what I've seen..."
+          </p>
+
+          {/* You can add other content below if needed */}
         </div>
       </section>
 
@@ -116,27 +107,49 @@ const Experience = () => {
               The Vanishing Ice
             </h3>
             <BeforeAfterSlider
-              beforeImage="https://images.unsplash.com/photo-1510566337591-4e3e18ed45c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              afterImage="https://images.unsplash.com/photo-1574484189077-7d1a5f3080b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              beforeLabel="Glacier 1984"
-              afterLabel="Glacier 2024"
+              beforeImage="/qorikalis1978jpg.jpg"
+              afterImage="/qorikalis2004.jpg"
+              beforeLabel="Pre-2020"
+              afterLabel="2020 Lockdown"
             />
             <p className="text-gray-400 mt-4 text-center">
               Drag to see how our glaciers have retreated over the decades
             </p>
           </div>
 
-          {/* Pollution Section */}
+          {/* Ozone Section */}
+          {/* Ozone Section */}
           <div className="mb-20 fade-in">
-            <h3 className="text-2xl font-bold text-gray-300 mb-6">
-              The Breath of Industry
+            <h3 className="text-2xl font-bold text-gray-300 mb-6 text-center">
+              The Breath of
             </h3>
-            <BeforeAfterSlider
-              beforeImage="https://images.unsplash.com/photo-1569163139394-de44cb54d53f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              afterImage="https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              beforeLabel="Pre-2020"
-              afterLabel="2020 Lockdown"
-            />
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Before Image */}
+              <div className="text-center">
+                <div className="aspect-square w-full overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="ozone_1979.jpg"
+                    alt="Glacier 1984"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-gray-400 mt-2">Glacier 1984</p>
+              </div>
+
+              {/* After Image */}
+              <div className="text-center">
+                <div className="aspect-square w-full overflow-hidden rounded-lg shadow-lg">
+                  <img
+                    src="ozone_2018_lrg.png"
+                    alt="Glacier 2024"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-gray-400 mt-2">Glacier 2024</p>
+              </div>
+            </div>
+
             <p className="text-gray-400 mt-4 text-center">
               Witness the dramatic clearing of pollution during global lockdowns
             </p>
